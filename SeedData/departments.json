@@ -1,0 +1,62 @@
+[
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d1a" },
+      "name": "Computer Science",
+      "description": "Department focused on computer science and information technology education.",
+      "headOfDepartmentId": { "$oid": "60b1f294e5cb5f001c9a4d30" },
+      "facultyIds": [
+        { "$oid": "60b1f294e5cb5f001c9a4d30" },
+        { "$oid": "60b1f294e5cb5f001c9a4d31" },
+        { "$oid": "60b1f294e5cb5f001c9a4d32" }
+      ],
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d1b" },
+      "name": "Mathematics",
+      "description": "Department dedicated to mathematical sciences and applications.",
+      "headOfDepartmentId": { "$oid": "60b1f294e5cb5f001c9a4d33" },
+      "facultyIds": [
+        { "$oid": "60b1f294e5cb5f001c9a4d33" },
+        { "$oid": "60b1f294e5cb5f001c9a4d34" }
+      ],
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d1c" },
+      "name": "Physics",
+      "description": "Department focusing on physics and theoretical sciences.",
+      "headOfDepartmentId": { "$oid": "60b1f294e5cb5f001c9a4d35" },
+      "facultyIds": [
+        { "$oid": "60b1f294e5cb5f001c9a4d35" },
+        { "$oid": "60b1f294e5cb5f001c9a4d36" }
+      ],
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d1d" },
+      "name": "Economics",
+      "description": "Department specializing in economics and business studies.",
+      "headOfDepartmentId": { "$oid": "60b1f294e5cb5f001c9a4d37" },
+      "facultyIds": [
+        { "$oid": "60b1f294e5cb5f001c9a4d37" },
+        { "$oid": "60b1f294e5cb5f001c9a4d38" }
+      ],
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d1e" },
+      "name": "Psychology",
+      "description": "Department focusing on psychological studies and research.",
+      "headOfDepartmentId": { "$oid": "60b1f294e5cb5f001c9a4d39" },
+      "facultyIds": [
+        { "$oid": "60b1f294e5cb5f001c9a4d39" }
+      ],
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    }
+  ]

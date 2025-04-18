@@ -1,0 +1,47 @@
+[
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d70" },
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "subject": "Website Feedback",
+      "message": "I found your website very helpful and easy to navigate. The information about courses and admission process was clearly presented.",
+      "submittedAt": { "$date": "2023-06-15T14:30:00Z" },
+      "isRead": true
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d71" },
+      "name": "Mary Johnson",
+      "email": "mary.johnson@example.com",
+      "subject": "Question about Admission",
+      "message": "I'm interested in applying for the Computer Science program. Could you please provide more information about the admission requirements and application deadlines?",
+      "submittedAt": { "$date": "2023-06-16T09:45:00Z" },
+      "isRead": true
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d72" },
+      "name": "Robert Wilson",
+      "email": "robert.wilson@example.com",
+      "subject": "Campus Facilities",
+      "message": "I'd like to know more about the campus facilities, particularly the sports facilities and student accommodation options.",
+      "submittedAt": { "$date": "2023-06-17T16:20:00Z" },
+      "isRead": false
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d73" },
+      "name": "Susan Brown",
+      "email": "susan.brown@example.com",
+      "subject": "Faculty Information",
+      "message": "I'm looking for information about the faculty in the Mathematics department. Is there a place on your website where I can find faculty profiles?",
+      "submittedAt": { "$date": "2023-06-18T11:10:00Z" },
+      "isRead": false
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d74" },
+      "name": "David Lee",
+      "email": "david.lee@example.com",
+      "subject": "Scholarship Opportunities",
+      "message": "I'm inquiring about scholarship opportunities available for undergraduate students. Could you provide information about eligibility criteria and application process?",
+      "submittedAt": { "$date": "2023-06-19T13:55:00Z" },
+      "isRead": false
+    }
+  ]

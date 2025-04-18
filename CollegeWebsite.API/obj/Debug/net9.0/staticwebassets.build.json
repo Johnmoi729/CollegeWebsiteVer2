@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "JFlGUQvsFzXB6i/oX5eTotfTETNVRpTE6e17K1jaIPg=",
+  "Source": "CollegeWebsite.API",
+  "BasePath": "_content/CollegeWebsite.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

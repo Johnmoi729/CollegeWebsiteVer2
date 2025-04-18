@@ -1,0 +1,238 @@
+[
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d50" },
+      "name": "John Doe",
+      "fatherName": "Michael Doe",
+      "motherName": "Susan Doe",
+      "dateOfBirth": { "$date": "2000-05-15T00:00:00Z" },
+      "gender": "Male",
+      "email": "john.doe@example.com",
+      "phoneNumber": "1234567890",
+      "residentialAddress": "123 College Ave, Education City, State - 12345",
+      "permanentAddress": "456 Home Street, Hometown, State - 54321",
+      "admissionStatus": "Accepted",
+      "registrationNumber": "ITM2023001",
+      "previousEducation": [
+        {
+          "university": "City High School",
+          "enrollmentNumber": "CHS20181234",
+          "center": "City High School",
+          "stream": "Science",
+          "field": "General Science",
+          "marksSecured": 450,
+          "outOf": 500,
+          "classObtained": "A"
+        }
+      ],
+      "selectedCourses": [
+        "CS101",
+        "MATH101",
+        "PHYS101"
+      ],
+      "sportsDetails": "Member of college basketball team",
+      "createdAt": { "$date": "2023-06-10T10:30:00Z" },
+      "updatedAt": { "$date": "2023-06-15T14:20:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d51" },
+      "name": "Jane Smith",
+      "fatherName": "Robert Smith",
+      "motherName": "Emily Smith",
+      "dateOfBirth": { "$date": "2001-07-22T00:00:00Z" },
+      "gender": "Female",
+      "email": "jane.smith@example.com",
+      "phoneNumber": "2345678901",
+      "residentialAddress": "234 Student Housing, Education City, State - 12345",
+      "permanentAddress": "789 Main Street, Hometown, State - 56789",
+      "admissionStatus": "Accepted",
+      "registrationNumber": "ITM2023002",
+      "previousEducation": [
+        {
+          "university": "County High School",
+          "enrollmentNumber": "CHS20191234",
+          "center": "County High School",
+          "stream": "Science",
+          "field": "Computer Science",
+          "marksSecured": 480,
+          "outOf": 500,
+          "classObtained": "A+"
+        }
+      ],
+      "selectedCourses": [
+        "CS101",
+        "MATH101",
+        "CS201"
+      ],
+      "sportsDetails": "Captain of swimming team",
+      "createdAt": { "$date": "2023-06-11T11:45:00Z" },
+      "updatedAt": { "$date": "2023-06-16T09:30:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d52" },
+      "name": "Michael Johnson",
+      "fatherName": "David Johnson",
+      "motherName": "Patricia Johnson",
+      "dateOfBirth": { "$date": "2000-12-05T00:00:00Z" },
+      "gender": "Male",
+      "email": "michael.johnson@example.com",
+      "phoneNumber": "3456789012",
+      "residentialAddress": "345 Campus Road, Education City, State - 12345",
+      "permanentAddress": "101 Park Avenue, Hometown, State - 67890",
+      "admissionStatus": "Waiting",
+      "registrationNumber": "ITM2023003",
+      "previousEducation": [
+        {
+          "university": "Metro High School",
+          "enrollmentNumber": "MHS20181235",
+          "center": "Metro High School",
+          "stream": "Commerce",
+          "field": "Business Studies",
+          "marksSecured": 420,
+          "outOf": 500,
+          "classObtained": "B+"
+        }
+      ],
+      "selectedCourses": [
+        "ECON101",
+        "MATH101",
+        "CS101"
+      ],
+      "sportsDetails": "Track and field athlete",
+      "createdAt": { "$date": "2023-06-12T14:20:00Z" },
+      "updatedAt": { "$date": "2023-06-12T14:20:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d53" },
+      "name": "Sarah Williams",
+      "fatherName": "James Williams",
+      "motherName": "Linda Williams",
+      "dateOfBirth": { "$date": "2001-03-18T00:00:00Z" },
+      "gender": "Female",
+      "email": "sarah.williams@example.com",
+      "phoneNumber": "4567890123",
+      "residentialAddress": "456 Dorm Street, Education City, State - 12345",
+      "permanentAddress": "222 Oak Road, Hometown, State - 78901",
+      "admissionStatus": "Accepted",
+      "registrationNumber": "ITM2023004",
+      "previousEducation": [
+        {
+          "university": "Valley High School",
+          "enrollmentNumber": "VHS20191236",
+          "center": "Valley High School",
+          "stream": "Science",
+          "field": "Biology",
+          "marksSecured": 470,
+          "outOf": 500,
+          "classObtained": "A"
+        }
+      ],
+      "selectedCourses": [
+        "PSYC101",
+        "MATH101",
+        "CS101"
+      ],
+      "sportsDetails": "Member of tennis team",
+      "createdAt": { "$date": "2023-06-13T10:15:00Z" },
+      "updatedAt": { "$date": "2023-06-18T11:30:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d54" },
+      "name": "Robert Brown",
+      "fatherName": "Thomas Brown",
+      "motherName": "Mary Brown",
+      "dateOfBirth": { "$date": "2000-09-30T00:00:00Z" },
+      "gender": "Male",
+      "email": "robert.brown@example.com",
+      "phoneNumber": "5678901234",
+      "residentialAddress": "567 College Road, Education City, State - 12345",
+      "permanentAddress": "333 Pine Street, Hometown, State - 89012",
+      "admissionStatus": "Under Review",
+      "registrationNumber": "ITM2023005",
+      "previousEducation": [
+        {
+          "university": "Central High School",
+          "enrollmentNumber": "CHS20181237",
+          "center": "Central High School",
+          "stream": "Arts",
+          "field": "Humanities",
+          "marksSecured": 430,
+          "outOf": 500,
+          "classObtained": "B+"
+        }
+      ],
+      "selectedCourses": [
+        "PSYC101",
+        "ECON101"
+      ],
+      "sportsDetails": "Football team member",
+      "createdAt": { "$date": "2023-06-14T15:45:00Z" },
+      "updatedAt": { "$date": "2023-06-14T15:45:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d55" },
+      "name": "Emily Davis",
+      "fatherName": "Charles Davis",
+      "motherName": "Nancy Davis",
+      "dateOfBirth": { "$date": "2001-01-12T00:00:00Z" },
+      "gender": "Female",
+      "email": "emily.davis@example.com",
+      "phoneNumber": "6789012345",
+      "residentialAddress": "678 Student Lane, Education City, State - 12345",
+      "permanentAddress": "444 Maple Avenue, Hometown, State - 90123",
+      "admissionStatus": "Rejected",
+      "registrationNumber": "ITM2023006",
+      "previousEducation": [
+        {
+          "university": "North High School",
+          "enrollmentNumber": "NHS20191238",
+          "center": "North High School",
+          "stream": "Commerce",
+          "field": "Accounting",
+          "marksSecured": 380,
+          "outOf": 500,
+          "classObtained": "C+"
+        }
+      ],
+      "selectedCourses": [
+        "ECON101",
+        "MATH101"
+      ],
+      "sportsDetails": "Chess club member",
+      "createdAt": { "$date": "2023-06-15T09:30:00Z" },
+      "updatedAt": { "$date": "2023-06-20T13:15:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d56" },
+      "name": "David Wilson",
+      "fatherName": "Richard Wilson",
+      "motherName": "Jennifer Wilson",
+      "dateOfBirth": { "$date": "2000-07-25T00:00:00Z" },
+      "gender": "Male",
+      "email": "david.wilson@example.com",
+      "phoneNumber": "7890123456",
+      "residentialAddress": "789 College Boulevard, Education City, State - 12345",
+      "permanentAddress": "555 Cedar Road, Hometown, State - 01234",
+      "admissionStatus": "Waiting",
+      "registrationNumber": "ITM2023007",
+      "previousEducation": [
+        {
+          "university": "East High School",
+          "enrollmentNumber": "EHS20181239",
+          "center": "East High School",
+          "stream": "Science",
+          "field": "Physics",
+          "marksSecured": 445,
+          "outOf": 500,
+          "classObtained": "A-"
+        }
+      ],
+      "selectedCourses": [
+        "PHYS101",
+        "MATH101",
+        "CS101"
+      ],
+      "sportsDetails": "Soccer team member",
+      "createdAt": { "$date": "2023-06-16T12:40:00Z" },
+      "updatedAt": { "$date": "2023-06-16T12:40:00Z" }
+    }
+  ]

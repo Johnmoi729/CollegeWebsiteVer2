@@ -1,0 +1,79 @@
+[
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d80" },
+      "studentId": { "$oid": "60b1f294e5cb5f001c9a4d50" },
+      "documentType": "Birth Certificate",
+      "documentName": "birth_certificate.pdf",
+      "fileContent": null,
+      "isSubmitted": true,
+      "submissionDate": { "$date": "2023-06-12T10:30:00Z" },
+      "createdAt": { "$date": "2023-06-12T10:30:00Z" },
+      "updatedAt": { "$date": "2023-06-12T10:30:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d81" },
+      "studentId": { "$oid": "60b1f294e5cb5f001c9a4d50" },
+      "documentType": "High School Certificate",
+      "documentName": "high_school_certificate.pdf",
+      "fileContent": null,
+      "isSubmitted": true,
+      "submissionDate": { "$date": "2023-06-12T10:35:00Z" },
+      "createdAt": { "$date": "2023-06-12T10:35:00Z" },
+      "updatedAt": { "$date": "2023-06-12T10:35:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d82" },
+      "studentId": { "$oid": "60b1f294e5cb5f001c9a4d51" },
+      "documentType": "Birth Certificate",
+      "documentName": "birth_certificate.pdf",
+      "fileContent": null,
+      "isSubmitted": true,
+      "submissionDate": { "$date": "2023-06-13T11:15:00Z" },
+      "createdAt": { "$date": "2023-06-13T11:15:00Z" },
+      "updatedAt": { "$date": "2023-06-13T11:15:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d83" },
+      "studentId": { "$oid": "60b1f294e5cb5f001c9a4d51" },
+      "documentType": "High School Certificate",
+      "documentName": "high_school_certificate.pdf",
+      "fileContent": null,
+      "isSubmitted": true,
+      "submissionDate": { "$date": "2023-06-13T11:20:00Z" },
+      "createdAt": { "$date": "2023-06-13T11:20:00Z" },
+      "updatedAt": { "$date": "2023-06-13T11:20:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d84" },
+      "studentId": { "$oid": "60b1f294e5cb5f001c9a4d52" },
+      "documentType": "Birth Certificate",
+      "documentName": "birth_certificate.pdf",
+      "fileContent": null,
+      "isSubmitted": true,
+      "submissionDate": { "$date": "2023-06-14T09:45:00Z" },
+      "createdAt": { "$date": "2023-06-14T09:45:00Z" },
+      "updatedAt": { "$date": "2023-06-14T09:45:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d85" },
+      "studentId": { "$oid": "60b1f294e5cb5f001c9a4d53" },
+      "documentType": "Birth Certificate",
+      "documentName": "birth_certificate.pdf",
+      "fileContent": null,
+      "isSubmitted": true,
+      "submissionDate": { "$date": "2023-06-14T14:20:00Z" },
+      "createdAt": { "$date": "2023-06-14T14:20:00Z" },
+      "updatedAt": { "$date": "2023-06-14T14:20:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d86" },
+      "studentId": { "$oid": "60b1f294e5cb5f001c9a4d53" },
+      "documentType": "High School Certificate",
+      "documentName": "high_school_certificate.pdf",
+      "fileContent": null,
+      "isSubmitted": true,
+      "submissionDate": { "$date": "2023-06-14T14:25:00Z" },
+      "createdAt": { "$date": "2023-06-14T14:25:00Z" },
+      "updatedAt": { "$date": "2023-06-14T14:25:00Z" }
+    }
+  ]

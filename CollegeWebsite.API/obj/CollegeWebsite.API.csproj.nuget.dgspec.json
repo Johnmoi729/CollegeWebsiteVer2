@@ -1,0 +1,327 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.API\\CollegeWebsite.API.csproj": {}
+  },
+  "projects": {
+    "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.API\\CollegeWebsite.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.API\\CollegeWebsite.API.csproj",
+        "projectName": "CollegeWebsite.API",
+        "projectPath": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.API\\CollegeWebsite.API.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Application\\CollegeWebsite.Application.csproj": {
+                "projectPath": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Application\\CollegeWebsite.Application.csproj"
+              },
+              "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Infrastructure\\CollegeWebsite.Infrastructure.csproj": {
+                "projectPath": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Infrastructure\\CollegeWebsite.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Application\\CollegeWebsite.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Application\\CollegeWebsite.Application.csproj",
+        "projectName": "CollegeWebsite.Application",
+        "projectPath": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Application\\CollegeWebsite.Application.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Domain\\CollegeWebsite.Domain.csproj": {
+                "projectPath": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Domain\\CollegeWebsite.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Domain\\CollegeWebsite.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Domain\\CollegeWebsite.Domain.csproj",
+        "projectName": "CollegeWebsite.Domain",
+        "projectPath": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Domain\\CollegeWebsite.Domain.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Infrastructure\\CollegeWebsite.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Infrastructure\\CollegeWebsite.Infrastructure.csproj",
+        "projectName": "CollegeWebsite.Infrastructure",
+        "projectPath": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Infrastructure\\CollegeWebsite.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Application\\CollegeWebsite.Application.csproj": {
+                "projectPath": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Application\\CollegeWebsite.Application.csproj"
+              },
+              "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Domain\\CollegeWebsite.Domain.csproj": {
+                "projectPath": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Domain\\CollegeWebsite.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

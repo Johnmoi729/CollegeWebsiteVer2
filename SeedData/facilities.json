@@ -1,0 +1,82 @@
+[
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d40" },
+      "name": "Central Library",
+      "description": "A comprehensive library with extensive collections of books, journals, and digital resources spanning all academic disciplines.",
+      "location": "Main Campus, Building A",
+      "type": "Library",
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d41" },
+      "name": "Student Hostel",
+      "description": "Comfortable residential facilities for students with modern amenities and security.",
+      "location": "North Campus",
+      "type": "Hostel",
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d42" },
+      "name": "Cafeteria",
+      "description": "A spacious dining area offering a variety of nutritious and affordable meal options.",
+      "location": "Main Campus, Building B",
+      "type": "Canteen",
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d43" },
+      "name": "Sports Complex",
+      "description": "State-of-the-art sports facilities including indoor and outdoor courts, swimming pool, and fitness center.",
+      "location": "South Campus",
+      "type": "Sports",
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d44" },
+      "name": "Computer Lab",
+      "description": "Advanced computing facilities with latest hardware and software for academic and research purposes.",
+      "location": "Main Campus, Building C",
+      "type": "Laboratory",
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d45" },
+      "name": "Career Development Center",
+      "description": "Resources and guidance for career planning, internships, and job placement.",
+      "location": "Main Campus, Building D",
+      "type": "Administration",
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d46" },
+      "name": "Health Center",
+      "description": "Medical services for students and staff, including routine check-ups and emergency care.",
+      "location": "Main Campus, Building E",
+      "type": "Medical",
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d47" },
+      "name": "Auditorium",
+      "description": "A large venue for academic conferences, cultural events, and college ceremonies.",
+      "location": "Main Campus, Building F",
+      "type": "Event",
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    }
+  ]

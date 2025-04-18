@@ -1,0 +1,11 @@
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Domain\bin\Debug\net9.0\CollegeWebsite.Domain.deps.json
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Domain\bin\Debug\net9.0\CollegeWebsite.Domain.dll
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Domain\bin\Debug\net9.0\CollegeWebsite.Domain.pdb
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Domain\obj\Debug\net9.0\CollegeWebsite.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Domain\obj\Debug\net9.0\CollegeWebsite.Domain.AssemblyInfoInputs.cache
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Domain\obj\Debug\net9.0\CollegeWebsite.Domain.AssemblyInfo.cs
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Domain\obj\Debug\net9.0\CollegeWebsite.Domain.csproj.CoreCompileInputs.cache
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Domain\obj\Debug\net9.0\CollegeWebsite.Domain.dll
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Domain\obj\Debug\net9.0\refint\CollegeWebsite.Domain.dll
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Domain\obj\Debug\net9.0\CollegeWebsite.Domain.pdb
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Domain\obj\Debug\net9.0\ref\CollegeWebsite.Domain.dll

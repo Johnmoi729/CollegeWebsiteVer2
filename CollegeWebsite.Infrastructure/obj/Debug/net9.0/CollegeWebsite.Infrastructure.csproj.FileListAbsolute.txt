@@ -1,0 +1,17 @@
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\bin\Debug\net9.0\CollegeWebsite.Infrastructure.deps.json
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\bin\Debug\net9.0\CollegeWebsite.Infrastructure.dll
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\bin\Debug\net9.0\CollegeWebsite.Infrastructure.pdb
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\bin\Debug\net9.0\CollegeWebsite.Application.dll
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\bin\Debug\net9.0\CollegeWebsite.Domain.dll
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\bin\Debug\net9.0\CollegeWebsite.Domain.pdb
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\bin\Debug\net9.0\CollegeWebsite.Application.pdb
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\obj\Debug\net9.0\CollegeWebsite.Infrastructure.csproj.AssemblyReference.cache
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\obj\Debug\net9.0\CollegeWebsite.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\obj\Debug\net9.0\CollegeWebsite.Infrastructure.AssemblyInfoInputs.cache
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\obj\Debug\net9.0\CollegeWebsite.Infrastructure.AssemblyInfo.cs
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\obj\Debug\net9.0\CollegeWebsite.Infrastructure.csproj.CoreCompileInputs.cache
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\obj\Debug\net9.0\CollegeW.70416E0D.Up2Date
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\obj\Debug\net9.0\CollegeWebsite.Infrastructure.dll
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\obj\Debug\net9.0\refint\CollegeWebsite.Infrastructure.dll
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\obj\Debug\net9.0\CollegeWebsite.Infrastructure.pdb
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\obj\Debug\net9.0\ref\CollegeWebsite.Infrastructure.dll

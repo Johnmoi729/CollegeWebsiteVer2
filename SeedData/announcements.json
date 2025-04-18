@@ -1,0 +1,68 @@
+[
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4da0" },
+      "title": "Welcome to the Fall Semester 2023",
+      "content": "We are excited to welcome all students to the Fall Semester 2023. Classes will begin on September 5, 2023. Please check your schedule and make sure you have registered for all your courses.",
+      "postedDate": { "$date": "2023-08-15T10:00:00Z" },
+      "postedBy": "Admin",
+      "isImportant": true,
+      "isActive": true,
+      "createdAt": { "$date": "2023-08-15T10:00:00Z" },
+      "updatedAt": { "$date": "2023-08-15T10:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4da1" },
+      "title": "Library Hours Extended",
+      "content": "Starting from September 10, 2023, the college library will extend its hours to accommodate students preparing for midterm exams. The new hours will be from 8:00 AM to 11:00 PM, Monday through Friday, and 9:00 AM to 9:00 PM on weekends.",
+      "postedDate": { "$date": "2023-08-20T14:30:00Z" },
+      "postedBy": "Library Staff",
+      "isImportant": false,
+      "isActive": true,
+      "createdAt": { "$date": "2023-08-20T14:30:00Z" },
+      "updatedAt": { "$date": "2023-08-20T14:30:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4da2" },
+      "title": "Career Fair - Fall 2023",
+      "content": "The annual Fall Career Fair will be held on October 15, 2023, from 10:00 AM to 4:00 PM in the Main Auditorium. Over 50 companies will be participating, offering opportunities for internships and full-time positions. All students are encouraged to attend with their updated resumes.",
+      "postedDate": { "$date": "2023-08-25T09:15:00Z" },
+      "postedBy": "Career Development Center",
+      "isImportant": true,
+      "isActive": true,
+      "createdAt": { "$date": "2023-08-25T09:15:00Z" },
+      "updatedAt": { "$date": "2023-08-25T09:15:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4da3" },
+      "title": "Scholarship Application Deadline",
+      "content": "The deadline for submitting scholarship applications for the Spring 2024 semester is November 1, 2023. All eligible students are encouraged to apply. For more information and application forms, please visit the Financial Aid Office or check the college website.",
+      "postedDate": { "$date": "2023-08-30T11:45:00Z" },
+      "postedBy": "Financial Aid Office",
+      "isImportant": true,
+      "isActive": true,
+      "createdAt": { "$date": "2023-08-30T11:45:00Z" },
+      "updatedAt": { "$date": "2023-08-30T11:45:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4da4" },
+      "title": "Campus Maintenance Notice",
+      "content": "The West Wing of Building B will be closed for maintenance from September 12 to September 15, 2023. Classes scheduled in this area will be temporarily relocated. Check your email for specific details about your class locations during this period.",
+      "postedDate": { "$date": "2023-09-05T15:20:00Z" },
+      "postedBy": "Facilities Management",
+      "isImportant": false,
+      "isActive": true,
+      "createdAt": { "$date": "2023-09-05T15:20:00Z" },
+      "updatedAt": { "$date": "2023-09-05T15:20:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4da5" },
+      "title": "Guest Lecture: Artificial Intelligence in Healthcare",
+      "content": "We are pleased to announce a guest lecture on 'Artificial Intelligence in Healthcare' by Dr. Sarah Johnson, a renowned expert in AI applications in medicine. The lecture will be held on September 20, 2023, at 3:00 PM in the Main Auditorium. All interested students and faculty are welcome to attend.",
+      "postedDate": { "$date": "2023-09-10T13:00:00Z" },
+      "postedBy": "Computer Science Department",
+      "isImportant": false,
+      "isActive": true,
+      "createdAt": { "$date": "2023-09-10T13:00:00Z" },
+      "updatedAt": { "$date": "2023-09-10T13:00:00Z" }
+    }
+  ]

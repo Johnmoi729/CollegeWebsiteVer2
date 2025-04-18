@@ -1,0 +1,74 @@
+[
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d60" },
+      "username": "admin",
+      "email": "admin@itmcollege.edu",
+      "passwordHash": "JGFyZ29uMmkkdj0xOSRtPTY1NTM2LHQ9MyxwPTQkSFNrMlB0dUVXM3E0dUJMdER3c1dDdyRKd0RBMldlbVJQUjM3QUR2RUNTdy93TUhuMGxSRCtCaWVXalI5UGlsWGxj",
+      "salt": "HSk2PtuEW3q4uBLtDwsWCw",
+      "roles": ["Admin"],
+      "isActive": true,
+      "lastLogin": { "$date": "2023-06-20T08:30:00Z" },
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-06-20T08:30:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d61" },
+      "username": "ITM2023001",
+      "email": "john.doe@example.com",
+      "passwordHash": "JGFyZ29uMmkkdj0xOSRtPTY1NTM2LHQ9MyxwPTQkVVVZcWR1SFJPU2RwdmNlZGZrSkdhdyRIY2VxbHZJdnFoWWpuUHBxMXRIS0pNdGRsanZJa0NmZkVDUm9wc2Z6VHVz",
+      "salt": "UUYqduHPOSdpvcedfjKGaw",
+      "roles": ["Student"],
+      "isActive": true,
+      "lastLogin": { "$date": "2023-06-19T14:45:00Z" },
+      "createdAt": { "$date": "2023-06-10T10:30:00Z" },
+      "updatedAt": { "$date": "2023-06-19T14:45:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d62" },
+      "username": "ITM2023002",
+      "email": "jane.smith@example.com",
+      "passwordHash": "JGFyZ29uMmkkdj0xOSRtPTY1NTM2LHQ9MyxwPTQkNmpSRW9zNUNzNUNnUUxoRWxWdko3ZyRqTTJSL0xveGxCSm1VbFZuWmVRWTh2bWd0TGgrTzlNMXk5MFJDK29PMlRB",
+      "salt": "6jREos5Cs5CgQLhElVvJ7g",
+      "roles": ["Student"],
+      "isActive": true,
+      "lastLogin": { "$date": "2023-06-18T09:15:00Z" },
+      "createdAt": { "$date": "2023-06-11T11:45:00Z" },
+      "updatedAt": { "$date": "2023-06-18T09:15:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d63" },
+      "username": "ITM2023003",
+      "email": "michael.johnson@example.com",
+      "passwordHash": "JGFyZ29uMmkkdj0xOSRtPTY1NTM2LHQ9MyxwPTQkQUU5NEppV2lQaXRodlExRkNqTHZFQSRORXNXcU1tL2JaRlMxaVIzRHo0eVBVWTlJdlBWRUNsUmxTM3d3dWVZWHln",
+      "salt": "AE94JiWiPithvQ1FCjLvEA",
+      "roles": ["Student"],
+      "isActive": true,
+      "lastLogin": { "$date": "2023-06-17T16:30:00Z" },
+      "createdAt": { "$date": "2023-06-12T14:20:00Z" },
+      "updatedAt": { "$date": "2023-06-17T16:30:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d64" },
+      "username": "faculty",
+      "email": "faculty@itmcollege.edu",
+      "passwordHash": "JGFyZ29uMmkkdj0xOSRtPTY1NTM2LHQ9MyxwPTQkcUkyZUI2aU9rTk1OOUhzMVp0UUl2dyRGcnFMeVhneUhjTld2ZmNESTlnWjIvdDlYOVdmdHRoVHFxN1QycUM1Mm9J",
+      "salt": "qI2eB6iOkNMN9Hs1ZtQIvw",
+      "roles": ["Faculty"],
+      "isActive": true,
+      "lastLogin": { "$date": "2023-06-20T10:15:00Z" },
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-06-20T10:15:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d65" },
+      "username": "ITM2023004",
+      "email": "sarah.williams@example.com",
+      "passwordHash": "JGFyZ29uMmkkdj0xOSRtPTY1NTM2LHQ9MyxwPTQkc2xQdmZJWlVWVmE0bEVrWXQ2aVVkZyRFNFg2OW9KRWw0RWM2M2ZEdTIxT3lha3pFY3prNmYzLy9WSnhCRk1SdEpv",
+      "salt": "slPvfIZUVVa4lEkYt6iUdg",
+      "roles": ["Student"],
+      "isActive": true,
+      "lastLogin": { "$date": "2023-06-19T11:20:00Z" },
+      "createdAt": { "$date": "2023-06-13T10:15:00Z" },
+      "updatedAt": { "$date": "2023-06-19T11:20:00Z" }
+    }
+  ]

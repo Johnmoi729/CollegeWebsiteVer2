@@ -1,0 +1,101 @@
+[
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d90" },
+      "studentId": { "$oid": "60b1f294e5cb5f001c9a4d50" },
+      "courseId": { "$oid": "60b1f294e5cb5f001c9a4d21" },
+      "instructorName": "Dr. Jane Smith",
+      "enrollmentDate": { "$date": "2023-06-15T10:30:00Z" },
+      "status": "Active",
+      "grade": null,
+      "createdAt": { "$date": "2023-06-15T10:30:00Z" },
+      "updatedAt": { "$date": "2023-06-15T10:30:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d91" },
+      "studentId": { "$oid": "60b1f294e5cb5f001c9a4d50" },
+      "courseId": { "$oid": "60b1f294e5cb5f001c9a4d25" },
+      "instructorName": "Dr. Michael Chen",
+      "enrollmentDate": { "$date": "2023-06-15T10:35:00Z" },
+      "status": "Active",
+      "grade": null,
+      "createdAt": { "$date": "2023-06-15T10:35:00Z" },
+      "updatedAt": { "$date": "2023-06-15T10:35:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d92" },
+      "studentId": { "$oid": "60b1f294e5cb5f001c9a4d50" },
+      "courseId": { "$oid": "60b1f294e5cb5f001c9a4d28" },
+      "instructorName": "Dr. David Kim",
+      "enrollmentDate": { "$date": "2023-06-15T10:40:00Z" },
+      "status": "Active",
+      "grade": null,
+      "createdAt": { "$date": "2023-06-15T10:40:00Z" },
+      "updatedAt": { "$date": "2023-06-15T10:40:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d93" },
+      "studentId": { "$oid": "60b1f294e5cb5f001c9a4d51" },
+      "courseId": { "$oid": "60b1f294e5cb5f001c9a4d21" },
+      "instructorName": "Dr. Jane Smith",
+      "enrollmentDate": { "$date": "2023-06-16T11:20:00Z" },
+      "status": "Active",
+      "grade": null,
+      "createdAt": { "$date": "2023-06-16T11:20:00Z" },
+      "updatedAt": { "$date": "2023-06-16T11:20:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d94" },
+      "studentId": { "$oid": "60b1f294e5cb5f001c9a4d51" },
+      "courseId": { "$oid": "60b1f294e5cb5f001c9a4d25" },
+      "instructorName": "Dr. Michael Chen",
+      "enrollmentDate": { "$date": "2023-06-16T11:25:00Z" },
+      "status": "Active",
+      "grade": null,
+      "createdAt": { "$date": "2023-06-16T11:25:00Z" },
+      "updatedAt": { "$date": "2023-06-16T11:25:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d95" },
+      "studentId": { "$oid": "60b1f294e5cb5f001c9a4d51" },
+      "courseId": { "$oid": "60b1f294e5cb5f001c9a4d22" },
+      "instructorName": "Dr. Jane Smith",
+      "enrollmentDate": { "$date": "2023-06-16T11:30:00Z" },
+      "status": "Active",
+      "grade": null,
+      "createdAt": { "$date": "2023-06-16T11:30:00Z" },
+      "updatedAt": { "$date": "2023-06-16T11:30:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d96" },
+      "studentId": { "$oid": "60b1f294e5cb5f001c9a4d53" },
+      "courseId": { "$oid": "60b1f294e5cb5f001c9a4d21" },
+      "instructorName": "Dr. Jane Smith",
+      "enrollmentDate": { "$date": "2023-06-18T09:15:00Z" },
+      "status": "Active",
+      "grade": null,
+      "createdAt": { "$date": "2023-06-18T09:15:00Z" },
+      "updatedAt": { "$date": "2023-06-18T09:15:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d97" },
+      "studentId": { "$oid": "60b1f294e5cb5f001c9a4d53" },
+      "courseId": { "$oid": "60b1f294e5cb5f001c9a4d25" },
+      "instructorName": "Dr. Michael Chen",
+      "enrollmentDate": { "$date": "2023-06-18T09:20:00Z" },
+      "status": "Active",
+      "grade": null,
+      "createdAt": { "$date": "2023-06-18T09:20:00Z" },
+      "updatedAt": { "$date": "2023-06-18T09:20:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d98" },
+      "studentId": { "$oid": "60b1f294e5cb5f001c9a4d53" },
+      "courseId": { "$oid": "60b1f294e5cb5f001c9a4d2c" },
+      "instructorName": "Dr. Thomas Lee",
+      "enrollmentDate": { "$date": "2023-06-18T09:25:00Z" },
+      "status": "Active",
+      "grade": null,
+      "createdAt": { "$date": "2023-06-18T09:25:00Z" },
+      "updatedAt": { "$date": "2023-06-18T09:25:00Z" }
+    }
+  ]

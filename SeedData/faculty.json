@@ -1,0 +1,174 @@
+[
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d30" },
+      "name": "Dr. Jane Smith",
+      "designation": "Professor",
+      "qualification": "Ph.D. in Computer Science",
+      "email": "jane.smith@itmcollege.edu",
+      "phoneNumber": "1234567890",
+      "departmentId": { "$oid": "60b1f294e5cb5f001c9a4d1a" },
+      "coursesTaught": [
+        { "$oid": "60b1f294e5cb5f001c9a4d21" },
+        { "$oid": "60b1f294e5cb5f001c9a4d22" }
+      ],
+      "bio": "Dr. Smith is a renowned expert in AI and machine learning with over 15 years of experience in teaching and research.",
+      "joinDate": { "$date": "2010-08-15T00:00:00Z" },
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d31" },
+      "name": "Prof. Robert Johnson",
+      "designation": "Associate Professor",
+      "qualification": "Ph.D. in Information Systems",
+      "email": "robert.johnson@itmcollege.edu",
+      "phoneNumber": "2345678901",
+      "departmentId": { "$oid": "60b1f294e5cb5f001c9a4d1a" },
+      "coursesTaught": [
+        { "$oid": "60b1f294e5cb5f001c9a4d23" }
+      ],
+      "bio": "Professor Johnson specializes in database systems and has published numerous papers on data management.",
+      "joinDate": { "$date": "2012-07-10T00:00:00Z" },
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d32" },
+      "name": "Dr. Emily Williams",
+      "designation": "Assistant Professor",
+      "qualification": "Ph.D. in Software Engineering",
+      "email": "emily.williams@itmcollege.edu",
+      "phoneNumber": "3456789012",
+      "departmentId": { "$oid": "60b1f294e5cb5f001c9a4d1a" },
+      "coursesTaught": [
+        { "$oid": "60b1f294e5cb5f001c9a4d24" }
+      ],
+      "bio": "Dr. Williams is passionate about software development methodologies and code quality.",
+      "joinDate": { "$date": "2018-01-15T00:00:00Z" },
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d33" },
+      "name": "Dr. Michael Chen",
+      "designation": "Professor",
+      "qualification": "Ph.D. in Mathematics",
+      "email": "michael.chen@itmcollege.edu",
+      "phoneNumber": "4567890123",
+      "departmentId": { "$oid": "60b1f294e5cb5f001c9a4d1b" },
+      "coursesTaught": [
+        { "$oid": "60b1f294e5cb5f001c9a4d25" },
+        { "$oid": "60b1f294e5cb5f001c9a4d26" }
+      ],
+      "bio": "Dr. Chen is a distinguished mathematician with research interests in analysis and topology.",
+      "joinDate": { "$date": "2008-09-01T00:00:00Z" },
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d34" },
+      "name": "Dr. Sarah Rodriguez",
+      "designation": "Associate Professor",
+      "qualification": "Ph.D. in Applied Mathematics",
+      "email": "sarah.rodriguez@itmcollege.edu",
+      "phoneNumber": "5678901234",
+      "departmentId": { "$oid": "60b1f294e5cb5f001c9a4d1b" },
+      "coursesTaught": [
+        { "$oid": "60b1f294e5cb5f001c9a4d27" }
+      ],
+      "bio": "Dr. Rodriguez specializes in numerical methods and computational mathematics.",
+      "joinDate": { "$date": "2015-08-20T00:00:00Z" },
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d35" },
+      "name": "Dr. David Kim",
+      "designation": "Professor",
+      "qualification": "Ph.D. in Theoretical Physics",
+      "email": "david.kim@itmcollege.edu",
+      "phoneNumber": "6789012345",
+      "departmentId": { "$oid": "60b1f294e5cb5f001c9a4d1c" },
+      "coursesTaught": [
+        { "$oid": "60b1f294e5cb5f001c9a4d28" }
+      ],
+      "bio": "Dr. Kim is a theoretical physicist with expertise in quantum mechanics and relativity.",
+      "joinDate": { "$date": "2009-07-15T00:00:00Z" },
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d36" },
+      "name": "Dr. Laura Wilson",
+      "designation": "Assistant Professor",
+      "qualification": "Ph.D. in Experimental Physics",
+      "email": "laura.wilson@itmcollege.edu",
+      "phoneNumber": "7890123456",
+      "departmentId": { "$oid": "60b1f294e5cb5f001c9a4d1c" },
+      "coursesTaught": [
+        { "$oid": "60b1f294e5cb5f001c9a4d29" }
+      ],
+      "bio": "Dr. Wilson focuses on experimental physics and laboratory techniques.",
+      "joinDate": { "$date": "2019-01-10T00:00:00Z" },
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d37" },
+      "name": "Dr. James Brown",
+      "designation": "Professor",
+      "qualification": "Ph.D. in Economics",
+      "email": "james.brown@itmcollege.edu",
+      "phoneNumber": "8901234567",
+      "departmentId": { "$oid": "60b1f294e5cb5f001c9a4d1d" },
+      "coursesTaught": [
+        { "$oid": "60b1f294e5cb5f001c9a4d2a" }
+      ],
+      "bio": "Dr. Brown is an economist specializing in macroeconomics and monetary policy.",
+      "joinDate": { "$date": "2011-08-10T00:00:00Z" },
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d38" },
+      "name": "Dr. Maria Garcia",
+      "designation": "Associate Professor",
+      "qualification": "Ph.D. in Business Economics",
+      "email": "maria.garcia@itmcollege.edu",
+      "phoneNumber": "9012345678",
+      "departmentId": { "$oid": "60b1f294e5cb5f001c9a4d1d" },
+      "coursesTaught": [
+        { "$oid": "60b1f294e5cb5f001c9a4d2b" }
+      ],
+      "bio": "Dr. Garcia researches business economics and industrial organization.",
+      "joinDate": { "$date": "2014-07-15T00:00:00Z" },
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "60b1f294e5cb5f001c9a4d39" },
+      "name": "Dr. Thomas Lee",
+      "designation": "Professor",
+      "qualification": "Ph.D. in Clinical Psychology",
+      "email": "thomas.lee@itmcollege.edu",
+      "phoneNumber": "0123456789",
+      "departmentId": { "$oid": "60b1f294e5cb5f001c9a4d1e" },
+      "coursesTaught": [
+        { "$oid": "60b1f294e5cb5f001c9a4d2c" }
+      ],
+      "bio": "Dr. Lee has extensive experience in clinical psychology and therapeutic practices.",
+      "joinDate": { "$date": "2010-08-20T00:00:00Z" },
+      "isActive": true,
+      "createdAt": { "$date": "2023-05-28T12:00:00Z" },
+      "updatedAt": { "$date": "2023-05-28T12:00:00Z" }
+    }
+  ]
