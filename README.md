@@ -1,5 +1,5 @@
 # CollegeWebsiteVer2
-Collge Website using .NET 9.0, mongoDB, React and Repository Pattern
+Collge Website using .NET 9.0, mongoDB, React and Repository Pattern (with a .bat file for ease in populating database)
 # College Website Development:
 ## Tech Stack:
 
