@@ -28,6 +28,8 @@ const StudentPortalPage = () => {
   const [error, setError] = useState(null);
   const [tabValue, setTabValue] = useState(0);
 
+  // In StudentPortalPage.js, modify your useEffect:
+
   useEffect(() => {
     const fetchPortalData = async () => {
       try {
@@ -35,7 +37,61 @@ const StudentPortalPage = () => {
         const data = await getStudentPortalData(user.id);
         setPortalData(data);
       } catch (err) {
+        console.error("Error fetching portal data:", err);
         setError(err.message || "Failed to load student portal data");
+
+        // Set mock data for testing when API fails
+        setPortalData({
+          id: user.id,
+          name: user.username || "Student User",
+          registrationNumber: user.username || "ITM2023001",
+          admissionStatus: "Accepted",
+          profileInfo: {
+            email: user.email || "student@example.com",
+            phoneNumber: "1234567890",
+            residentialAddress: "123 College Avenue, Education City",
+            permanentAddress: "456 Home Street, Hometown",
+            lastUpdated: new Date().toISOString(),
+          },
+          enrolledCourses: [
+            {
+              courseId: "course1",
+              courseName: "Introduction to Computer Science",
+              courseCode: "CS101",
+              instructorName: "Dr. Jane Smith",
+              credits: 3,
+              status: "Active",
+            },
+            {
+              courseId: "course2",
+              courseName: "Calculus I",
+              courseCode: "MATH101",
+              instructorName: "Dr. Michael Chen",
+              credits: 3,
+              status: "Active",
+            },
+          ],
+          announcements: [
+            {
+              id: "ann1",
+              title: "Welcome to the Fall Semester",
+              content:
+                "Welcome to the Fall Semester 2025. Classes begin on September 5.",
+              postedDate: new Date().toISOString(),
+              postedBy: "Admin",
+              isImportant: true,
+            },
+            {
+              id: "ann2",
+              title: "Library Hours Extended",
+              content:
+                "The college library will extend its hours during exams.",
+              postedDate: new Date(Date.now() - 86400000).toISOString(),
+              postedBy: "Library Staff",
+              isImportant: false,
+            },
+          ],
+        });
       } finally {
         setLoading(false);
       }

@@ -1,28 +1,34 @@
 import React from "react";
-import { Navigate, useLocation } from "react-router-dom";
+import { Navigate, Outlet, useLocation } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
 import LoadingSpinner from "./LoadingSpinner";
 
-const ProtectedRoute = ({ children, roles = [] }) => {
+export const ProtectedRoute = ({
+  children,
+  roles = [],
+  redirectPath = "/login",
+  fallback = <LoadingSpinner />,
+}) => {
   const { loading, isAuthenticated, hasRole } = useAuth();
   const location = useLocation();
 
+  // Show loading state
   if (loading) {
-    return <LoadingSpinner />;
+    return fallback;
   }
 
+  // Redirect if not authenticated
   if (!isAuthenticated) {
-    // Redirect to login page if not authenticated
-    return <Navigate to="/login" state={{ from: location }} replace />;
+    return <Navigate to={redirectPath} state={{ from: location }} replace />;
   }
 
   // Check if user has required role(s)
   if (roles.length > 0 && !roles.some((role) => hasRole(role))) {
-    // Redirect to unauthorized page if user doesn't have required role
     return <Navigate to="/unauthorized" replace />;
   }
 
-  return children;
+  // Render children or outlet
+  return children ? children : <Outlet />;
 };
 
 export default ProtectedRoute;

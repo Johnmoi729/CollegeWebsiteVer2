@@ -3,6 +3,33 @@ import api from "./api";
 
 export const login = async (credentials) => {
   try {
+    // Hardcoded admin credentials for testing
+    if (
+      credentials.username === "admin" &&
+      credentials.password === "admin123"
+    ) {
+      // Create a mock admin user and token
+      const mockAdminUser = {
+        id: "admin-user-id",
+        username: "admin",
+        email: "admin@itmcollege.edu",
+        roles: ["Admin"],
+      };
+
+      // Generate a fake token (in a real app, never do this!)
+      const fakeToken = "admin-mock-token-" + Date.now();
+
+      // Store token and user data in localStorage
+      localStorage.setItem("token", fakeToken);
+      localStorage.setItem("user", JSON.stringify(mockAdminUser));
+
+      return {
+        token: fakeToken,
+        ...mockAdminUser,
+      };
+    }
+
+    // Continue with normal API login for other users
     const response = await api.post("/auth/login", credentials);
     const { token, ...userData } = response.data;
 
@@ -41,12 +68,20 @@ export const getCurrentUser = () => {
   return user ? JSON.parse(user) : null;
 };
 
+// Also update the isAuthenticated function to handle the fake token
 export const isAuthenticated = () => {
   const token = localStorage.getItem("token");
   if (!token) return false;
 
+  // If it's our fake admin token, consider it valid
+  if (token.startsWith("admin-mock-token-")) {
+    // Check if it's not older than 1 hour (3600000 milliseconds)
+    const tokenTimestamp = parseInt(token.split("-").pop(), 10);
+    return Date.now() - tokenTimestamp < 3600000;
+  }
+
   try {
-    // Check if token is expired
+    // Otherwise, check JWT validity as before
     const decoded = jwtDecode(token);
     return decoded.exp > Date.now() / 1000;
   } catch (error) {

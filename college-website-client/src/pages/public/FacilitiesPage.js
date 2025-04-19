@@ -13,6 +13,7 @@ import {
   Container,
   Divider,
   Grid,
+  Paper,
   Tab,
   Tabs,
   Typography,
