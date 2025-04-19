@@ -588,6 +588,9 @@
       "CollegeWebsite.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "MongoDB.Bson": "3.3.0"
+        },
         "compile": {
           "bin/placeholder/CollegeWebsite.Domain.dll": {}
         },

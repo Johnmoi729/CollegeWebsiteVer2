@@ -9,3 +9,5 @@ E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWe
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Domain\obj\Debug\net9.0\refint\CollegeWebsite.Domain.dll
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Domain\obj\Debug\net9.0\CollegeWebsite.Domain.pdb
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Domain\obj\Debug\net9.0\ref\CollegeWebsite.Domain.dll
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Domain\obj\Debug\net9.0\CollegeWebsite.Domain.sourcelink.json
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Domain\obj\Debug\net9.0\CollegeWebsite.Domain.csproj.AssemblyReference.cache

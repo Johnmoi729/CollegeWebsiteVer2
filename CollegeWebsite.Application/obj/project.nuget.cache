@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FNAOEJprsMA=",
+  "dgSpecHash": "CGZPwsWOdsA=",
   "success": true,
   "projectFilePath": "E:\\P1\\dotnet_vscode file collections\\dotnet_college_website_with_react\\CollegeWebsite\\CollegeWebsite.Application\\CollegeWebsite.Application.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,8 @@
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.4\\microsoft.extensions.logging.abstractions.9.0.4.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\mongodb.bson\\3.3.0\\mongodb.bson.3.3.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []

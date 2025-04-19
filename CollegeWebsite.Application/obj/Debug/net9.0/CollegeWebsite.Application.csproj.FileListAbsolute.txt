@@ -13,3 +13,4 @@ E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWe
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Application\obj\Debug\net9.0\refint\CollegeWebsite.Application.dll
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Application\obj\Debug\net9.0\CollegeWebsite.Application.pdb
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Application\obj\Debug\net9.0\ref\CollegeWebsite.Application.dll
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Application\obj\Debug\net9.0\CollegeWebsite.Application.sourcelink.json

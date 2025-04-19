@@ -67,3 +67,4 @@ E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWe
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.API\obj\Debug\net9.0\CollegeWebsite.API.pdb
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.API\obj\Debug\net9.0\CollegeWebsite.API.genruntimeconfig.cache
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.API\obj\Debug\net9.0\ref\CollegeWebsite.API.dll
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.API\obj\Debug\net9.0\CollegeWebsite.API.sourcelink.json

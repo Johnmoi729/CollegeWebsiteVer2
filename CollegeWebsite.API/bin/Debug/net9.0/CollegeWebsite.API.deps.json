@@ -447,6 +447,9 @@
         }
       },
       "CollegeWebsite.Domain/1.0.0": {
+        "dependencies": {
+          "MongoDB.Bson": "3.3.0"
+        },
         "runtime": {
           "CollegeWebsite.Domain.dll": {
             "assemblyVersion": "1.0.0.0",

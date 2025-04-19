@@ -6,9 +6,10 @@ import ProtectedRoute from "./components/common/ProtectedRoute";
 import AboutPage from "./pages/public/AboutPage";
 import ContactPage from "./pages/public/ContactPage";
 import CoursesPage from "./pages/public/CoursesPage";
+import DepartmentsPage from "./pages/public/DepartmentsPage";
+import FacilitiesPage from "./pages/public/FacilitiesPage";
 import FacultyPage from "./pages/public/FacultyPage";
 import HomePage from "./pages/public/HomePage";
-// Removed imports for DepartmentsPage and FacilitiesPage
 
 // Auth Pages
 import LoginPage from "./pages/auth/LoginPage";
@@ -16,14 +17,17 @@ import RegisterPage from "./pages/auth/RegisterPage";
 
 // Student Pages
 import AdmissionPage from "./pages/student/AdmissionPage";
+import CourseRegistrationPage from "./pages/student/CourseRegistrationPage";
 import ProfilePage from "./pages/student/ProfilePage";
-// Removed import for CourseRegistrationPage
+import StudentPortalPage from "./pages/student/StudentPortalPage";
 
 // Admin Pages
 import AdminDashboardPage from "./pages/admin/AdminDashboardPage";
 import CourseManagementPage from "./pages/admin/CourseManagementPage";
+import FacultyManagementPage from "./pages/admin/FacultyManagementPage";
+import FeedbackManagementPage from "./pages/admin/FeedbackManagementPage";
+import StudentDetailsPage from "./pages/admin/StudentDetailsPage";
 import StudentManagementPage from "./pages/admin/StudentManagementPage";
-// Removed imports for FacultyManagementPage, FeedbackManagementPage, and StudentDetailsPage
 
 // Error Pages
 import NotFoundPage from "./pages/error/NotFoundPage";
@@ -35,10 +39,11 @@ const AppRoutes = () => {
       {/* Public Routes */}
       <Route path="/" element={<HomePage />} />
       <Route path="/courses" element={<CoursesPage />} />
+      <Route path="/departments" element={<DepartmentsPage />} />
       <Route path="/faculty" element={<FacultyPage />} />
+      <Route path="/facilities" element={<FacilitiesPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/about" element={<AboutPage />} />
-      {/* Removed routes for departments and facilities */}
 
       {/* Auth Routes */}
       <Route path="/login" element={<LoginPage />} />
@@ -51,6 +56,22 @@ const AppRoutes = () => {
         element={<AdmissionPage showStatus={true} />}
       />
       <Route
+        path="/student-portal"
+        element={
+          <ProtectedRoute roles={["Student"]}>
+            <StudentPortalPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/course-registration"
+        element={
+          <ProtectedRoute roles={["Student"]}>
+            <CourseRegistrationPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
         path="/profile"
         element={
           <ProtectedRoute>
@@ -58,7 +79,6 @@ const AppRoutes = () => {
           </ProtectedRoute>
         }
       />
-      {/* Removed route for course registration */}
 
       {/* Admin Routes */}
       <Route
@@ -78,6 +98,14 @@ const AppRoutes = () => {
         }
       />
       <Route
+        path="/admin/students/:id"
+        element={
+          <ProtectedRoute roles={["Admin"]}>
+            <StudentDetailsPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
         path="/admin/courses"
         element={
           <ProtectedRoute roles={["Admin"]}>
@@ -85,7 +113,22 @@ const AppRoutes = () => {
           </ProtectedRoute>
         }
       />
-      {/* Removed routes for faculty management, feedback management, and student details */}
+      <Route
+        path="/admin/faculty"
+        element={
+          <ProtectedRoute roles={["Admin"]}>
+            <FacultyManagementPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/admin/feedback"
+        element={
+          <ProtectedRoute roles={["Admin"]}>
+            <FeedbackManagementPage />
+          </ProtectedRoute>
+        }
+      />
 
       {/* Error Routes */}
       <Route path="/unauthorized" element={<UnauthorizedPage />} />

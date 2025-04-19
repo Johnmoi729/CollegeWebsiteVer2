@@ -15,3 +15,4 @@ E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWe
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\obj\Debug\net9.0\refint\CollegeWebsite.Infrastructure.dll
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\obj\Debug\net9.0\CollegeWebsite.Infrastructure.pdb
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\obj\Debug\net9.0\ref\CollegeWebsite.Infrastructure.dll
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Infrastructure\obj\Debug\net9.0\CollegeWebsite.Infrastructure.sourcelink.json

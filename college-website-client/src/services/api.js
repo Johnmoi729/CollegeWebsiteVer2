@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://localhost:5052/api"; // Your .NET API URL
+const API_URL = "http://localhost:5052/api"; // Your .NET API URL
 
 const api = axios.create({
   baseURL: API_URL,
