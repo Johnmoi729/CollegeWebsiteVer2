@@ -58,14 +58,20 @@ const AdminDashboardPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // AdminDashboardPage.js - improved error handling
   useEffect(() => {
     const fetchStats = async () => {
       try {
         setLoading(true);
+        setError(null); // Clear previous errors
         const data = await getDashboardStats();
         setStats(data);
       } catch (err) {
-        setError(err.message || "Failed to load dashboard statistics");
+        console.error("Dashboard fetch error:", err);
+        setError(
+          err.message ||
+            "Failed to load dashboard statistics. Please try refreshing the page."
+        );
       } finally {
         setLoading(false);
       }
@@ -282,7 +288,7 @@ const AdminDashboardPage = () => {
               <Button
                 variant="contained"
                 startIcon={<AddIcon />}
-                onClick={() => navigate("/admin/courses/new")}
+                onClick={() => navigate("/admin/courses")}
               >
                 Add New Course
               </Button>

@@ -3,8 +3,8 @@
       "_id": { "$oid": "60b1f294e5cb5f001c9a4d60" },
       "username": "admin",
       "email": "admin@itmcollege.edu",
-      "passwordHash": "Dl2wUra6QZY6g5jYW8YnLBvBU3g1+NZxWVn5+NjnRn1f+IwV35xgEHjghcRXtsIYEiOw+x5FRbmF2nQ2XBvuEQ==",
-      "salt": "XTSzRQj93qCJbBSyPDJ+E0G3RLJhQHLhnNXr53F3ciYN7TDtcjZhD0NqOp7A3LoL4oe0QFLqQO6V5QeQFJEj5Q==",
+      "passwordHash": "eM66CFsR36xljQQcD7Ggv1bmsl7Wj7isdmQAQ8dovpoOXRBlDCydVByyREo+81H51T8qEOeRVebUs6H0yyo/ZA==",
+      "salt": "obss5WY/FJll2z5IusbxBylIdO1Z2o9PmrZ2G5kDCspeGAiSN35tyrdsz0SdHYE1qpuchCfULSe3cWQeuQZuErrz9YnKufl2lDc5QRnsL5Aw3hQaKgsu43TMqqEzFF93HjfK7If6CyIWLpu5Su2yXuGg7UK14egfC0OSLoCmcQQ=",
       "roles": ["Admin"],
       "isActive": true,
       "lastLogin": { "$date": "2023-06-20T08:30:00Z" },
@@ -15,8 +15,8 @@
       "_id": { "$oid": "60b1f294e5cb5f001c9a4d61" },
       "username": "ITM2023001",
       "email": "john.doe@example.com",
-      "passwordHash": "FpFWfnB17DfRJy0sD2hYWi6sZ6XQZpydRZ4yqtZVs0iwkvOsXnFQrmQw1JiPfGI68xLdkmdR1sVQMEfvIAZi+A==",
-      "salt": "tSRVbhsDMT9MumTfm+YBrDgn+yGUt/uR9JQTIsHdNWR0tl+MPr0UkMVRh+jpLNnKUF08VZocJUVTFEaUQPCR4g==",
+      "passwordHash": "eM66CFsR36xljQQcD7Ggv1bmsl7Wj7isdmQAQ8dovpoOXRBlDCydVByyREo+81H51T8qEOeRVebUs6H0yyo/ZA==",
+      "salt": "obss5WY/FJll2z5IusbxBylIdO1Z2o9PmrZ2G5kDCspeGAiSN35tyrdsz0SdHYE1qpuchCfULSe3cWQeuQZuErrz9YnKufl2lDc5QRnsL5Aw3hQaKgsu43TMqqEzFF93HjfK7If6CyIWLpu5Su2yXuGg7UK14egfC0OSLoCmcQQ=",
       "roles": ["Student"],
       "isActive": true,
       "lastLogin": { "$date": "2023-06-19T14:45:00Z" },
@@ -27,8 +27,8 @@
       "_id": { "$oid": "60b1f294e5cb5f001c9a4d62" },
       "username": "ITM2023002",
       "email": "jane.smith@example.com",
-      "passwordHash": "bAQUKEK/qQTZ61TLpjP/pzOYyOL/71VvWQcIxaZSN0Qx7QMBdU+Tp2RsJC9LxZ4xgHUB2UZrr3n8UU/3jZOyuA==",
-      "salt": "UY4e3ZwG43kHZFKGgRqpkzRkYWW3XRbdJFDyGbVnZqeSUgMxRQ9QJuM9F+CgdpOuupkQ/FNPLzdTRARnNW2oCg==",
+      "passwordHash": "eM66CFsR36xljQQcD7Ggv1bmsl7Wj7isdmQAQ8dovpoOXRBlDCydVByyREo+81H51T8qEOeRVebUs6H0yyo/ZA==",
+      "salt": "obss5WY/FJll2z5IusbxBylIdO1Z2o9PmrZ2G5kDCspeGAiSN35tyrdsz0SdHYE1qpuchCfULSe3cWQeuQZuErrz9YnKufl2lDc5QRnsL5Aw3hQaKgsu43TMqqEzFF93HjfK7If6CyIWLpu5Su2yXuGg7UK14egfC0OSLoCmcQQ=",
       "roles": ["Student"],
       "isActive": true,
       "lastLogin": { "$date": "2023-06-18T09:15:00Z" },
@@ -39,8 +39,8 @@
       "_id": { "$oid": "60b1f294e5cb5f001c9a4d63" },
       "username": "ITM2023003",
       "email": "michael.johnson@example.com",
-      "passwordHash": "oScLttBf/xbRwHAHXTDzTryCEu3HxTX/t40gWu5ZwnMH5EWBN9Ue9TMpJLOBwFQHIWzm6tPLSYJq28gqfPskhA==",
-      "salt": "pjYwzvgbPTPG9nPMYx7ry0dN6wj5sFcsFl4BdCNXCm6xaCBEtCkPYmF9A/CbGHrQu6jJP2/6UZRK1MbA51rM7w==",
+      "passwordHash": "eM66CFsR36xljQQcD7Ggv1bmsl7Wj7isdmQAQ8dovpoOXRBlDCydVByyREo+81H51T8qEOeRVebUs6H0yyo/ZA==",
+      "salt": "obss5WY/FJll2z5IusbxBylIdO1Z2o9PmrZ2G5kDCspeGAiSN35tyrdsz0SdHYE1qpuchCfULSe3cWQeuQZuErrz9YnKufl2lDc5QRnsL5Aw3hQaKgsu43TMqqEzFF93HjfK7If6CyIWLpu5Su2yXuGg7UK14egfC0OSLoCmcQQ=",
       "roles": ["Student"],
       "isActive": true,
       "lastLogin": { "$date": "2023-06-17T16:30:00Z" },
@@ -51,8 +51,8 @@
       "_id": { "$oid": "60b1f294e5cb5f001c9a4d64" },
       "username": "faculty",
       "email": "faculty@itmcollege.edu",
-      "passwordHash": "PPjVHv+d+yslnkPwuXdUgA66U2YYijBzZkMC8dOzXv/3L3vfAr1xM1sRNY4ZOTikCjJL5xM+MsTw5+n06J9XYQ==",
-      "salt": "RvHKPMFdRj/pEgdqcSMZHSTbmkxIgS7JX3TyRF/FQoPaGXcDUJt2Y+W7q3Iy4nJwQjlb0lIdshXTFmGZbk2kpA==",
+      "passwordHash": "eM66CFsR36xljQQcD7Ggv1bmsl7Wj7isdmQAQ8dovpoOXRBlDCydVByyREo+81H51T8qEOeRVebUs6H0yyo/ZA==",
+      "salt": "obss5WY/FJll2z5IusbxBylIdO1Z2o9PmrZ2G5kDCspeGAiSN35tyrdsz0SdHYE1qpuchCfULSe3cWQeuQZuErrz9YnKufl2lDc5QRnsL5Aw3hQaKgsu43TMqqEzFF93HjfK7If6CyIWLpu5Su2yXuGg7UK14egfC0OSLoCmcQQ=",
       "roles": ["Faculty"],
       "isActive": true,
       "lastLogin": { "$date": "2023-06-20T10:15:00Z" },
@@ -63,12 +63,34 @@
       "_id": { "$oid": "60b1f294e5cb5f001c9a4d65" },
       "username": "ITM2023004",
       "email": "sarah.williams@example.com",
-      "passwordHash": "YT+/dDQGlzW+4gL44mYBzZ/lsfqgPGK4n6CVs84nEY9mw41ZH3Qy3BoqJSGrz+0B9cMYg4m+7m86b/gHEcXLlw==",
-      "salt": "7/mBYzAXwRaWOiMWYzU4MDx+R5u/7sNzQPFPGzHpzYkW5pTu5/DpZZDx7ZI1pGeBY/m8jmvhRcHjIrGZkYdvcw==",
+      "passwordHash": "eM66CFsR36xljQQcD7Ggv1bmsl7Wj7isdmQAQ8dovpoOXRBlDCydVByyREo+81H51T8qEOeRVebUs6H0yyo/ZA==",
+      "salt": "obss5WY/FJll2z5IusbxBylIdO1Z2o9PmrZ2G5kDCspeGAiSN35tyrdsz0SdHYE1qpuchCfULSe3cWQeuQZuErrz9YnKufl2lDc5QRnsL5Aw3hQaKgsu43TMqqEzFF93HjfK7If6CyIWLpu5Su2yXuGg7UK14egfC0OSLoCmcQQ=",
       "roles": ["Student"],
       "isActive": true,
       "lastLogin": { "$date": "2023-06-19T11:20:00Z" },
       "createdAt": { "$date": "2023-06-13T10:15:00Z" },
       "updatedAt": { "$date": "2023-06-19T11:20:00Z" }
+    },
+    {
+      "_id": {
+        "$oid": "6803259a4a656ac7e7ff3b2d"
+      },
+      "username": "John",
+      "email": "test@gmail.com",
+      "passwordHash": "eM66CFsR36xljQQcD7Ggv1bmsl7Wj7isdmQAQ8dovpoOXRBlDCydVByyREo+81H51T8qEOeRVebUs6H0yyo/ZA==",
+      "salt": "obss5WY/FJll2z5IusbxBylIdO1Z2o9PmrZ2G5kDCspeGAiSN35tyrdsz0SdHYE1qpuchCfULSe3cWQeuQZuErrz9YnKufl2lDc5QRnsL5Aw3hQaKgsu43TMqqEzFF93HjfK7If6CyIWLpu5Su2yXuGg7UK14egfC0OSLoCmcQQ=",
+      "roles": [
+        "Admin"
+      ],
+      "isActive": true,
+      "lastLogin": {
+        "$date": "2025-04-26T03:31:43.479Z"
+      },
+      "createdAt": {
+        "$date": "2025-04-19T04:24:58.960Z"
+      },
+      "updatedAt": {
+        "$date": "2025-04-26T03:31:43.479Z"
+      }
     }
   ]

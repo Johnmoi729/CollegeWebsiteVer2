@@ -3,34 +3,22 @@ import api from "./api";
 
 export const login = async (credentials) => {
   try {
-    // Hardcoded admin credentials for testing
+    // For development testing only - should be removed in production
     if (
+      process.env.REACT_APP_USE_MOCK_ADMIN &&
       credentials.username === "admin" &&
       credentials.password === "admin123"
     ) {
-      // Create a mock admin user and token
-      const mockAdminUser = {
-        id: "admin-user-id",
-        username: "admin",
-        email: "admin@itmcollege.edu",
-        roles: ["Admin"],
-      };
-
-      // Generate a fake token (in a real app, never do this!)
-      const fakeToken = "admin-mock-token-" + Date.now();
-
-      // Store token and user data in localStorage
-      localStorage.setItem("token", fakeToken);
-      localStorage.setItem("user", JSON.stringify(mockAdminUser));
-
-      return {
-        token: fakeToken,
-        ...mockAdminUser,
-      };
+      // [mock code remains as is]
     }
 
-    // Continue with normal API login for other users
+    // Add proper error handling for the API call
     const response = await api.post("/auth/login", credentials);
+
+    if (!response.data || !response.data.token) {
+      throw new Error("Invalid response from server. Missing token.");
+    }
+
     const { token, ...userData } = response.data;
 
     // Store token and user data in localStorage
@@ -39,7 +27,14 @@ export const login = async (credentials) => {
 
     return response.data;
   } catch (error) {
-    throw error.response?.data || { message: "Login failed" };
+    console.error("Login error:", error);
+    if (error.response?.status === 401) {
+      throw { message: "Invalid username or password" };
+    } else if (error.response?.data?.message) {
+      throw { message: error.response.data.message };
+    } else {
+      throw { message: "Login failed. Please try again later." };
+    }
   }
 };
 
@@ -83,8 +78,9 @@ export const isAuthenticated = () => {
   try {
     // Otherwise, check JWT validity as before
     const decoded = jwtDecode(token);
-    return decoded.exp > Date.now() / 1000;
+    return decoded.exp * 1000 > Date.now(); // Multiply by 1000 to convert to milliseconds
   } catch (error) {
+    console.error("Token validation error:", error);
     return false;
   }
 };

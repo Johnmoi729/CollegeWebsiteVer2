@@ -52,6 +52,8 @@ builder.Services.AddScoped<IFeedbackService, FeedbackService>();
 // Additional services
 builder.Services.AddScoped<IAdmissionService, AdmissionService>();
 builder.Services.AddScoped<IStudentPortalService, StudentPortalService>();
+// Add this line in the "Register services" section
+builder.Services.AddScoped<IDashboardService, DashboardService>();
 
 // Add AutoMapper
 builder.Services.AddAutoMapper(typeof(MappingProfile));

@@ -8,9 +8,9 @@ E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWe
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Application\obj\Debug\net9.0\CollegeWebsite.Application.AssemblyInfoInputs.cache
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Application\obj\Debug\net9.0\CollegeWebsite.Application.AssemblyInfo.cs
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Application\obj\Debug\net9.0\CollegeWebsite.Application.csproj.CoreCompileInputs.cache
+E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Application\obj\Debug\net9.0\CollegeWebsite.Application.sourcelink.json
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Application\obj\Debug\net9.0\CollegeW.721A565B.Up2Date
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Application\obj\Debug\net9.0\CollegeWebsite.Application.dll
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Application\obj\Debug\net9.0\refint\CollegeWebsite.Application.dll
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Application\obj\Debug\net9.0\CollegeWebsite.Application.pdb
 E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Application\obj\Debug\net9.0\ref\CollegeWebsite.Application.dll
-E:\P1\dotnet_vscode file collections\dotnet_college_website_with_react\CollegeWebsite\CollegeWebsite.Application\obj\Debug\net9.0\CollegeWebsite.Application.sourcelink.json

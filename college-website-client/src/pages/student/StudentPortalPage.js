@@ -1,6 +1,10 @@
 import {
+  Avatar,
   Box,
   Button,
+  Card,
+  CardContent,
+  Chip,
   CircularProgress,
   Container,
   Divider,
@@ -19,6 +23,7 @@ import AlertMessage from "../../components/common/AlertMessage";
 import PageHeader from "../../components/common/PageHeader";
 import { useAuth } from "../../contexts/AuthContext";
 import { getStudentPortalData } from "../../services/dashboardService";
+import { getStudentByRegistrationNumber } from "../../services/studentService";
 import { formatDate } from "../../utils/formatUtils";
 
 const StudentPortalPage = () => {
@@ -28,87 +33,75 @@ const StudentPortalPage = () => {
   const [error, setError] = useState(null);
   const [tabValue, setTabValue] = useState(0);
 
-  // In StudentPortalPage.js, modify your useEffect:
-
   useEffect(() => {
     const fetchPortalData = async () => {
       try {
         setLoading(true);
-        const data = await getStudentPortalData(user.id);
+
+        // Only proceed if we have a user
+        if (!user) {
+          throw new Error("No user data available");
+        }
+
+        let studentData = null;
+        let studentId = null;
+
+        // Try to get student data using registration number (username)
+        try {
+          if (user.username) {
+            studentData = await getStudentByRegistrationNumber(user.username);
+            if (studentData && studentData.id) {
+              studentId = studentData.id;
+            }
+          }
+        } catch (err) {
+          console.log(
+            "Could not fetch student by registration number:",
+            err.message
+          );
+        }
+
+        // If we have a student ID, use it; otherwise use the user ID as fallback
+        const data = await getStudentPortalData(studentId || user.id);
         setPortalData(data);
       } catch (err) {
         console.error("Error fetching portal data:", err);
         setError(err.message || "Failed to load student portal data");
-
-        // Set mock data for testing when API fails
-        setPortalData({
-          id: user.id,
-          name: user.username || "Student User",
-          registrationNumber: user.username || "ITM2023001",
-          admissionStatus: "Accepted",
-          profileInfo: {
-            email: user.email || "student@example.com",
-            phoneNumber: "1234567890",
-            residentialAddress: "123 College Avenue, Education City",
-            permanentAddress: "456 Home Street, Hometown",
-            lastUpdated: new Date().toISOString(),
-          },
-          enrolledCourses: [
-            {
-              courseId: "course1",
-              courseName: "Introduction to Computer Science",
-              courseCode: "CS101",
-              instructorName: "Dr. Jane Smith",
-              credits: 3,
-              status: "Active",
-            },
-            {
-              courseId: "course2",
-              courseName: "Calculus I",
-              courseCode: "MATH101",
-              instructorName: "Dr. Michael Chen",
-              credits: 3,
-              status: "Active",
-            },
-          ],
-          announcements: [
-            {
-              id: "ann1",
-              title: "Welcome to the Fall Semester",
-              content:
-                "Welcome to the Fall Semester 2025. Classes begin on September 5.",
-              postedDate: new Date().toISOString(),
-              postedBy: "Admin",
-              isImportant: true,
-            },
-            {
-              id: "ann2",
-              title: "Library Hours Extended",
-              content:
-                "The college library will extend its hours during exams.",
-              postedDate: new Date(Date.now() - 86400000).toISOString(),
-              postedBy: "Library Staff",
-              isImportant: false,
-            },
-          ],
-        });
       } finally {
         setLoading(false);
       }
     };
 
-    if (user?.id) {
-      fetchPortalData();
-    }
+    fetchPortalData();
   }, [user]);
 
   const handleTabChange = (event, newValue) => {
     setTabValue(newValue);
   };
 
+  // Helper function to get the status color
+  const getStatusColor = (status) => {
+    switch (status?.toLowerCase()) {
+      case "accepted":
+        return "success";
+      case "rejected":
+        return "error";
+      case "waiting":
+        return "warning";
+      case "under review":
+        return "info";
+      default:
+        return "default";
+    }
+  };
+
   if (loading) {
     return (
       <Container maxWidth="lg">
+        <PageHeader
+          title="Student Portal"
+          breadcrumbs={[{ label: "Student Portal", path: "/student-portal" }]}
+        />
         <Box sx={{ display: "flex", justifyContent: "center", py: 8 }}>
           <CircularProgress />
         </Box>
@@ -119,6 +112,10 @@ const StudentPortalPage = () => {
   if (error) {
     return (
       <Container maxWidth="lg">
+        <PageHeader
+          title="Student Portal"
+          breadcrumbs={[{ label: "Student Portal", path: "/student-portal" }]}
+        />
         <AlertMessage
           severity="error"
           message={error}
@@ -143,22 +140,46 @@ const StudentPortalPage = () => {
             sx={{ p: 3, mb: 4, bgcolor: "primary.light", color: "white" }}
           >
             <Grid container spacing={2} alignItems="center">
-              <Grid item xs={12} md={8}>
+              <Grid item xs={12} md={2}>
+                <Avatar
+                  sx={{
+                    width: 80,
+                    height: 80,
+                    bgcolor: "white",
+                    color: "primary.main",
+                    fontSize: "2rem",
+                    mx: { xs: "auto", md: 0 },
+                  }}
+                >
+                  {portalData.name
+                    ? portalData.name.charAt(0).toUpperCase()
+                    : "S"}
+                </Avatar>
+              </Grid>
+              <Grid item xs={12} md={6}>
                 <Typography variant="h5" component="h2" gutterBottom>
                   Welcome, {portalData.name}!
                 </Typography>
                 <Typography variant="body1">
                   Registration Number: {portalData.registrationNumber}
                 </Typography>
-                <Typography variant="body2" sx={{ mt: 1 }}>
-                  Status: <strong>{portalData.admissionStatus}</strong>
-                </Typography>
+                <Box sx={{ mt: 1, display: "flex", alignItems: "center" }}>
+                  <Typography variant="body2" sx={{ mr: 1 }}>
+                    Status:
+                  </Typography>
+                  <Chip
+                    label={portalData.admissionStatus}
+                    color={getStatusColor(portalData.admissionStatus)}
+                    size="small"
+                    sx={{ color: "white", fontWeight: "medium" }}
+                  />
+                </Box>
               </Grid>
               <Grid
                 item
                 xs={12}
                 md={4}
-                sx={{ textAlign: { xs: "left", md: "right" } }}
+                sx={{ textAlign: { xs: "center", md: "right" } }}
               >
                 <Button
                   variant="contained"
@@ -184,6 +205,8 @@ const StudentPortalPage = () => {
               value={tabValue}
               onChange={handleTabChange}
               aria-label="student portal tabs"
+              variant="scrollable"
+              scrollButtons="auto"
             >
               <Tab label="Dashboard" />
               <Tab label="Courses" />
@@ -246,7 +269,7 @@ const StudentPortalPage = () => {
                       {portalData.enrolledCourses
                         .slice(0, 3)
                         .map((course, index) => (
-                          <React.Fragment key={course.courseId}>
+                          <React.Fragment key={course.courseId || index}>
                             <ListItem alignItems="flex-start">
                               <ListItemText
                                 primary={course.courseName}
@@ -266,9 +289,19 @@ const StudentPortalPage = () => {
                                   </>
                                 }
                               />
+                              <Chip
+                                label={course.status}
+                                size="small"
+                                color={
+                                  course.status === "Active"
+                                    ? "success"
+                                    : "default"
+                                }
+                                sx={{ ml: 1 }}
+                              />
                             </ListItem>
                             {index <
-                              portalData.enrolledCourses.slice(0, 3).length -
+                              Math.min(portalData.enrolledCourses.length, 3) -
                                 1 && <Divider component="li" />}
                           </React.Fragment>
                         ))}
@@ -298,16 +331,21 @@ const StudentPortalPage = () => {
                   <Divider sx={{ mb: 2 }} />
 
                   {portalData.announcements &&
-                  portalData.announcements.length > 0 ? (
+                  portalData.announcements.filter((a) => a.isImportant).length >
+                    0 ? (
                     <List disablePadding>
                       {portalData.announcements
                         .filter((announcement) => announcement.isImportant)
                         .slice(0, 3)
                         .map((announcement, index, filteredAnnouncements) => (
-                          <React.Fragment key={announcement.id}>
+                          <React.Fragment key={announcement.id || index}>
                             <ListItem alignItems="flex-start" sx={{ px: 0 }}>
                               <ListItemText
-                                primary={announcement.title}
+                                primary={
+                                  <Typography variant="subtitle1" color="error">
+                                    {announcement.title}
+                                  </Typography>
+                                }
                                 secondary={
                                   <>
                                     <Typography
@@ -337,6 +375,15 @@ const StudentPortalPage = () => {
                       No important announcements at this time.
                     </Typography>
                   )}
+
+                  {portalData.announcements &&
+                    portalData.announcements.length > 0 && (
+                      <Box sx={{ mt: 2, textAlign: "right" }}>
+                        <Button onClick={() => setTabValue(2)} size="small">
+                          View All Announcements
+                        </Button>
+                      </Box>
+                    )}
                 </Paper>
 
                 <Paper elevation={1} sx={{ p: 3 }}>
@@ -402,19 +449,26 @@ const StudentPortalPage = () => {
               {portalData.enrolledCourses &&
               portalData.enrolledCourses.length > 0 ? (
                 <Grid container spacing={3}>
-                  {portalData.enrolledCourses.map((course) => (
-                    <Grid item xs={12} sm={6} md={4} key={course.courseId}>
+                  {portalData.enrolledCourses.map((course, index) => (
+                    <Grid
+                      item
+                      xs={12}
+                      sm={6}
+                      md={4}
+                      key={course.courseId || index}
+                    >
                       <Paper
                         elevation={2}
                         sx={{
                           p: 2,
                           height: "100%",
-                          borderLeft:
+                          borderLeft: "4px solid",
+                          borderColor:
                             course.status === "Active"
-                              ? "4px solid green"
+                              ? "success.main"
                               : course.status === "Completed"
-                              ? "4px solid blue"
-                              : "4px solid gray",
+                              ? "primary.main"
+                              : "grey.400",
                         }}
                       >
                         <Typography variant="h6" component="h4" gutterBottom>
@@ -429,10 +483,17 @@ const StudentPortalPage = () => {
                         </Typography>
                         <Typography variant="body2" gutterBottom>
                           <strong>Instructor:</strong>{" "}
-                          {course.instructorName || "TBA"}
+                          {course.instructorName || "To be announced"}
                         </Typography>
                         <Typography variant="body2" gutterBottom>
-                          <strong>Status:</strong> {course.status}
+                          <strong>Status:</strong>{" "}
+                          <Chip
+                            label={course.status}
+                            size="small"
+                            color={
+                              course.status === "Active" ? "success" : "default"
+                            }
+                          />
                         </Typography>
                         <Box sx={{ mt: 2 }}>
                           <Button
@@ -476,52 +537,56 @@ const StudentPortalPage = () => {
 
               {portalData.announcements &&
               portalData.announcements.length > 0 ? (
-                <List>
+                <Grid container spacing={3}>
                   {portalData.announcements.map((announcement, index) => (
-                    <React.Fragment key={announcement.id}>
-                      <ListItem alignItems="flex-start" sx={{ px: 1 }}>
-                        <ListItemText
-                          primary={
-                            <Typography
-                              variant="h6"
-                              component="h4"
-                              color={
-                                announcement.isImportant ? "error" : "inherit"
-                              }
-                            >
-                              {announcement.title}
-                              {announcement.isImportant && " (Important)"}
-                            </Typography>
-                          }
-                          secondary={
-                            <Box>
-                              <Typography
-                                component="span"
-                                variant="body2"
-                                color="text.secondary"
-                                gutterBottom
-                              >
-                                Posted on {formatDate(announcement.postedDate)}{" "}
-                                by {announcement.postedBy}
-                              </Typography>
-                              <Typography
-                                component="div"
-                                variant="body1"
-                                color="text.primary"
-                                sx={{ mt: 1 }}
-                              >
-                                {announcement.content}
-                              </Typography>
-                            </Box>
-                          }
-                        />
-                      </ListItem>
-                      {index < portalData.announcements.length - 1 && (
-                        <Divider component="li" />
-                      )}
-                    </React.Fragment>
+                    <Grid item xs={12} key={announcement.id || index}>
+                      <Card
+                        variant="outlined"
+                        sx={{
+                          borderLeft: announcement.isImportant
+                            ? "4px solid"
+                            : "none",
+                          borderColor: announcement.isImportant
+                            ? "error.main"
+                            : "inherit",
+                        }}
+                      >
+                        <CardContent>
+                          <Typography
+                            variant="h6"
+                            component="h4"
+                            color={
+                              announcement.isImportant ? "error" : "inherit"
+                            }
+                            gutterBottom
+                          >
+                            {announcement.title}
+                            {announcement.isImportant && (
+                              <Chip
+                                label="Important"
+                                color="error"
+                                size="small"
+                                sx={{ ml: 1 }}
+                              />
+                            )}
+                          </Typography>
+                          <Typography
+                            variant="body2"
+                            color="text.secondary"
+                            gutterBottom
+                          >
+                            Posted on {formatDate(announcement.postedDate)} by{" "}
+                            {announcement.postedBy}
+                          </Typography>
+                          <Divider sx={{ my: 1 }} />
+                          <Typography variant="body1">
+                            {announcement.content}
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </Grid>
                   ))}
-                </List>
+                </Grid>
               ) : (
                 <Typography variant="body1" sx={{ py: 2 }}>
                   No announcements at this time.

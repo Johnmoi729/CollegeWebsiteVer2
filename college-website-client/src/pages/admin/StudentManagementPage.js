@@ -26,7 +26,11 @@ const StudentManagementPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
-  const initialFilter = queryParams.get("filter") || "all";
+  const initialRawFilter = queryParams.get("filter") || "all";
+
+  // Map 'pending' to a valid value if it comes from the URL
+  const initialFilter =
+    initialRawFilter === "pending" ? "waiting" : initialRawFilter;
 
   const [students, setStudents] = useState([]);
   const [filteredStudents, setFilteredStudents] = useState([]);
